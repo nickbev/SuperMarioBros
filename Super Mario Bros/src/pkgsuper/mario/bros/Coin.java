@@ -21,10 +21,10 @@ public class Coin extends JComponent// Currency which is counted and gives score
     
     public Coin(int b, int h) // Sets up location in constructor
     {
-        c1 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Coin" + File.separator + "coin1.png").getImage();
-        c2 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Coin" + File.separator + "coin2.png").getImage();
-        c3 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Coin" + File.separator + "coin3.png").getImage();
-        c4 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Coin" + File.separator + "coin4.png").getImage();
+        c1 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Coin/coin1.png")).getImage();
+        c2 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Coin/coin2.png")).getImage();
+        c3 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Coin/coin3.png")).getImage();
+        c4 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Coin/coin4.png")).getImage();
         
         x = b;
         y = h;

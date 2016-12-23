@@ -26,10 +26,10 @@ public class Fireball extends JComponent// Currency which is counted and gives s
     
     public Fireball (Mario player, int a) // Sets up location in constructor
     {
-        f1 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Powerup" + File.separator + "fireball1.png").getImage();
-        f2 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Powerup" + File.separator + "fireball2.png").getImage();
-        f3 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Powerup" + File.separator + "fireball3.png").getImage();
-        f4 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Powerup" + File.separator + "fireball4.png").getImage();
+        f1 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Powerup/fireball1.png")).getImage();
+        f2 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Powerup/fireball2.png")).getImage();
+        f3 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Powerup/fireball3.png")).getImage();
+        f4 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Powerup/fireball4.png")).getImage();
         
         if(player.getFaceRight() == true)
         {

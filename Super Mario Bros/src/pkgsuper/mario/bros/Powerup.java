@@ -34,17 +34,17 @@ public class Powerup extends JComponent
     
     public Powerup(Block b)
     {
-        star1 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Powerup" + File.separator + "star1.png").getImage();
-        star2 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Powerup" + File.separator + "star2.png").getImage();
-        star3 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Powerup" + File.separator + "star3.png").getImage();
-        star4 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Powerup" + File.separator + "star4.png").getImage();
-        life = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Powerup" + File.separator + "1upmushroom.png").getImage();
-        mushroom = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Powerup" + File.separator + "mushroom.png").getImage();
-        flower1 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Powerup" + File.separator + "flower1.png").getImage();
-        flower2 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Powerup" + File.separator + "flower2.png").getImage();
-        flower3 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Powerup" + File.separator + "flower3.png").getImage();
-        flower4 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Powerup" + File.separator + "flower4.png").getImage();
-        c1 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Coin" + File.separator + "coin1.png").getImage();
+        star1 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Powerup/star1.png")).getImage();
+        star2 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Powerup/star2.png")).getImage();
+        star3 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Powerup/star3.png")).getImage();
+        star4 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Powerup/star4.png")).getImage();
+        life = new ImageIcon(getClass().getClassLoader().getResource("Pics/Powerup/1upmushroom.png")).getImage();
+        mushroom = new ImageIcon(getClass().getClassLoader().getResource("Pics/Powerup/mushroom.png")).getImage();
+        flower1 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Powerup/flower1.png")).getImage();
+        flower2 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Powerup/flower2.png")).getImage();
+        flower3 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Powerup/flower3.png")).getImage();
+        flower4 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Powerup/flower4.png")).getImage();
+        c1 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Coin/coin1.png")).getImage();
         
         x = b.getX();
         y = b.getY()-50;

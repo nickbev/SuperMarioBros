@@ -28,12 +28,12 @@ public class Goomba extends JComponent
     public Goomba(int a, int b) // Constructor
     {
         
-        g1 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Goomba" + File.separator + "goomba1.png").getImage();
-        g2 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Goomba" + File.separator + "goomba2.png").getImage();
-        gX = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Goomba" + File.separator + "goombadead.png").getImage();
-        gD1 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Goomba" + File.separator + "goombaD1.png").getImage();
-        gD2 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Goomba" + File.separator + "goombaD2.png").getImage();
-        gDX = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Goomba" + File.separator + "goombaDdead.png").getImage();
+        g1 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Goomba/goomba1.png")).getImage();
+        g2 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Goomba/goomba2.png")).getImage();
+        gX = new ImageIcon(getClass().getClassLoader().getResource("Pics/Goomba/goombadead.png")).getImage();
+        gD1 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Goomba/goombaD1.png")).getImage();
+        gD2 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Goomba/goombaD2.png")).getImage();
+        gDX = new ImageIcon(getClass().getClassLoader().getResource("Pics/Goomba/goombaDdead.png")).getImage();
         
         x = a;
         y = b;

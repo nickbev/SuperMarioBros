@@ -93,12 +93,12 @@ public class MarioCanvas extends JPanel implements ActionListener, KeyListener
     
     public MarioCanvas (int x, MarioFrame frame, int sc, int sts, int lives) // Starts the timer and listeners
     {
-        flag = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Level" + File.separator + "flag.png").getImage();
-        level1 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Level" + File.separator + "level11.gif").getImage();
-        level2 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Level" + File.separator + "level12.gif").getImage();
-        level3 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Level" + File.separator + "level13.gif").getImage();
-        level4 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Level" + File.separator + "level14.gif").getImage();
-        c1 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Coin" + File.separator + "coin1.png").getImage();
+        flag = new ImageIcon(getClass().getClassLoader().getResource("Pics/Level/flag.png")).getImage();
+        level1 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Level/level11.gif")).getImage();
+        level2 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Level/level12.gif")).getImage();
+        level3 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Level/level13.gif")).getImage();
+        level4 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Level/level14.gif")).getImage();
+        c1 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Coin/coin1.png")).getImage();
         
         playMusic(x, false, false);
         this.setLevel(x);
@@ -117,31 +117,31 @@ public class MarioCanvas extends JPanel implements ActionListener, KeyListener
         try
         {
             if(dead)
-                musicFile = new File(".." + File.separator + "Music" + File.separator + "dead.wav");
+                musicFile = new File(getClass().getClassLoader().getResource("Music/dead.wav").toString());
             else if (player.getX() ==  300)
-                musicFile = new File(".." + File.separator + "Music" + File.separator + "complete.wav");
+                musicFile = new File(getClass().getClassLoader().getResource("Music/complete.wav").toString());
             else if (player.getInvincible() == true)
-                musicFile = new File(".." + File.separator + "Music" + File.separator + "invincible.wav");
+                musicFile = new File(getClass().getClassLoader().getResource("Music/invincible.wav").toString());
             else if (level == 1 || level == 3)
             {
                 if(hurry)
-                    musicFile = new File(".." + File.separator + "Music" + File.separator + "level11hurry.wav");
+                    musicFile = new File(getClass().getClassLoader().getResource("Music/level11hurry.wav").toString());
                 else
-                    musicFile = new File(".." + File.separator + "Music" + File.separator + "level11.wav");
+                    musicFile = new File(getClass().getClassLoader().getResource("Music/level11.wav").toString());
             }
             else if (level == 2)
             {
                 if(hurry)
-                    musicFile = new File(".." + File.separator + "Music" + File.separator + "level12hurry.wav");
+                    musicFile = new File(getClass().getClassLoader().getResource("Music/level12hurry.wav").toString());
                 else
-                    musicFile = new File(".." + File.separator + "Music" + File.separator + "level12.wav");
+                    musicFile = new File(getClass().getClassLoader().getResource("Music/level12.wav").toString());
             }
             else
             {
                 if(hurry)
-                    musicFile = new File(".." + File.separator + "Music" + File.separator + "level14hurry.wav");
+                    musicFile = new File(getClass().getClassLoader().getResource("Music/level14hurry.wav").toString());
                 else
-                    musicFile = new File(".." + File.separator + "Music" + File.separator + "level14.wav");
+                    musicFile = new File(getClass().getClassLoader().getResource("Music/level14.wav").toString());
             }
             
             musicURI = musicFile.toURI();
@@ -189,39 +189,39 @@ public class MarioCanvas extends JPanel implements ActionListener, KeyListener
         try
         {
             if(x == 1)
-                soundFile = new File(".." + File.separator + "sound" + File.separator + "smalljump.wav");
+                soundFile = new File(getClass().getClassLoader().getResource("sound/smalljump.wav").toString());
             else if (x == 2)
-                soundFile = new File(".." + File.separator + "sound" + File.separator + "bigjump.wav");
+                soundFile = new File(getClass().getClassLoader().getResource("sound/bigjump.wav").toString());
             else if (x == 3)
-                soundFile = new File(".." + File.separator + "sound" + File.separator + "powerup.wav");
+                soundFile = new File(getClass().getClassLoader().getResource("sound/powerup.wav").toString());
             else if (x == 4)
-                soundFile = new File(".." + File.separator + "sound" + File.separator + "fireball.wav");
+                soundFile = new File(getClass().getClassLoader().getResource("sound/fireball.wav").toString());
             else if (x == 5)
-                soundFile = new File(".." + File.separator + "sound" + File.separator + "1up.wav");
+                soundFile = new File(getClass().getClassLoader().getResource("sound/1up.wav").toString());
             else if (x == 6)
-                soundFile = new File(".." + File.separator + "sound" + File.separator + "coin.wav");
+                soundFile = new File(getClass().getClassLoader().getResource("sound/coin.wav").toString());
             else if (x == 7)
-                soundFile = new File(".." + File.separator + "sound" + File.separator + "blocksmash.wav");
+                soundFile = new File(getClass().getClassLoader().getResource("sound/blocksmash.wav").toString());
             else if (x == 8)
-                soundFile = new File(".." + File.separator + "sound" + File.separator + "stomp.wav");
+                soundFile = new File(getClass().getClassLoader().getResource("sound/stomp.wav").toString());
             else if (x == 9)
-                soundFile = new File(".." + File.separator + "sound" + File.separator + "pipe.wav");
+                soundFile = new File(getClass().getClassLoader().getResource("sound/pipe.wav").toString());
             else if (x == 10)
-                soundFile = new File(".." + File.separator + "sound" + File.separator + "flagpole.wav");
+                soundFile = new File(getClass().getClassLoader().getResource("sound/flagpole.wav").toString());
             else if (x == 11)
-                soundFile = new File(".." + File.separator + "sound" + File.separator + "bowserfire.wav");
+                soundFile = new File(getClass().getClassLoader().getResource("sound/bowserfire.wav").toString());
             else if (x == 12)
-                soundFile = new File(".." + File.separator + "sound" + File.separator + "bowserfall.wav");
+                soundFile = new File(getClass().getClassLoader().getResource("sound/bowserfall.wav").toString());
             else if (x == 13)
-                soundFile = new File(".." + File.separator + "sound" + File.separator + "pause.wav");
+                soundFile = new File(getClass().getClassLoader().getResource("sound/pause.wav").toString());
             else if (x == 14)
-                soundFile = new File(".." + File.separator + "sound" + File.separator + "appear.wav");
+                soundFile = new File(getClass().getClassLoader().getResource("sound/appear.wav").toString());
             else if (x == 15)
-                soundFile = new File(".." + File.separator + "sound" + File.separator + "kick.wav");
+                soundFile = new File(getClass().getClassLoader().getResource("sound/kick.wav").toString());
             else if (x == 16)
-                soundFile = new File(".." + File.separator + "sound" + File.separator + "gameover.wav");
+                soundFile = new File(getClass().getClassLoader().getResource("sound/gameover.wav").toString());
             else
-                soundFile = new File(".." + File.separator + "sound" + File.separator + "ending.wav");
+                soundFile = new File(getClass().getClassLoader().getResource("sound/ending.wav").toString());
             
             
             soundURI = soundFile.toURI();

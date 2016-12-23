@@ -87,51 +87,51 @@ public class Mario extends JComponent // Controllable character
         super();
         screen = x;
         // Dead sprite
-        d = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Mario" + File.separator + "smalldied.png").getImage();
+        d = new ImageIcon(getClass().getClassLoader().getResource("Pics/Mario/smalldied.png")).getImage();
         
         // Sprites as a small character
-        sr1 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Mario" + File.separator + "smallstillright.png").getImage();
-        w1r1 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Mario" + File.separator + "smallwalkright.png").getImage();
-        w2r1 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Mario" + File.separator + "smallwalk2right.png").getImage();
-        jr1 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Mario" + File.separator + "smalljumpright.png").getImage();
-        hr1 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Mario" + File.separator + "smallhangright.png").getImage();
-        sl1 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Mario" + File.separator + "smallstillleft.png").getImage();
-        w1l1 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Mario" + File.separator + "smallwalkleft.png").getImage();
-        w2l1 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Mario" + File.separator + "smallwalk2left.png").getImage();
-        jl1 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Mario" + File.separator + "smalljumpleft.png").getImage();
-        hl1 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Mario" + File.separator + "smallhangleft.png").getImage();
+        sr1 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Mario/smallstillright.png")).getImage();
+        w1r1 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Mario/smallwalkright.png")).getImage();
+        w2r1 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Mario/smallwalk2right.png")).getImage();
+        jr1 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Mario/smalljumpright.png")).getImage();
+        hr1 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Mario/smallhangright.png")).getImage();
+        sl1 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Mario/smallstillleft.png")).getImage();
+        w1l1 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Mario/smallwalkleft.png")).getImage();
+        w2l1 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Mario/smallwalk2left.png")).getImage();
+        jl1 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Mario/smalljumpleft.png")).getImage();
+        hl1 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Mario/smallhangleft.png")).getImage();
         
         
         
         // Sprites as a big character
-        sr2 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Mario" + File.separator + "bigstillright.png").getImage();
-        w1r2 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Mario" + File.separator + "bigwalkright.png").getImage();
-        w2r2 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Mario" + File.separator + "bigwalk2right.png").getImage();
-        jr2 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Mario" + File.separator + "bigjumpright.png").getImage();
-        cr2 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Mario" + File.separator + "bigcrouchright.png").getImage();
-        hr2 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Mario" + File.separator + "bighangright.png").getImage();
-        sl2 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Mario" + File.separator + "bigstillleft.png").getImage();
-        w1l2 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Mario" + File.separator + "bigwalkleft.png").getImage();
-        w2l2 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Mario" + File.separator + "bigwalk2left.png").getImage();
-        jl2 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Mario" + File.separator + "bigjumpleft.png").getImage();
-        cl2 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Mario" + File.separator + "bigcrouchleft.png").getImage();
-        hl2 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Mario" + File.separator + "bighangleft.png").getImage();
+        sr2 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Mario/bigstillright.png")).getImage();
+        w1r2 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Mario/bigwalkright.png")).getImage();
+        w2r2 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Mario/bigwalk2right.png")).getImage();
+        jr2 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Mario/bigjumpright.png")).getImage();
+        cr2 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Mario/bigcrouchright.png")).getImage();
+        hr2 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Mario/bighangright.png")).getImage();
+        sl2 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Mario/bigstillleft.png")).getImage();
+        w1l2 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Mario/bigwalkleft.png")).getImage();
+        w2l2 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Mario/bigwalk2left.png")).getImage();
+        jl2 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Mario/bigjumpleft.png")).getImage();
+        cl2 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Mario/bigcrouchleft.png")).getImage();
+        hl2 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Mario/bighangleft.png")).getImage();
         
         // Sprites as a fireball character
-        sr3 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Mario" + File.separator + "firestillright.png").getImage();
-        w1r3 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Mario" + File.separator + "firewalkright.png").getImage();
-        w2r3 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Mario" + File.separator + "firewalk2right.png").getImage();
-        jr3 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Mario" + File.separator + "firejumpright.png").getImage();
-        cr3 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Mario" + File.separator + "firecrouchright.png").getImage();
-        hr3 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Mario" + File.separator + "firehangright.png").getImage();
-        sl3 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Mario" + File.separator + "firestillleft.png").getImage();
-        w1l3 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Mario" + File.separator + "firewalkleft.png").getImage();
-        w2l3 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Mario" + File.separator + "firewalk2left.png").getImage();
-        jl3 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Mario" + File.separator + "firejumpleft.png").getImage();
-        tr3 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Mario" + File.separator + "firethrowright.png").getImage();
-        tl3 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Mario" + File.separator + "firethrowleft.png").getImage();
-        cl3 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Mario" + File.separator + "firecrouchleft.png").getImage();
-        hl3 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Mario" + File.separator + "firehangleft.png").getImage();
+        sr3 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Mario/firestillright.png")).getImage();
+        w1r3 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Mario/firewalkright.png")).getImage();
+        w2r3 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Mario/firewalk2right.png")).getImage();
+        jr3 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Mario/firejumpright.png")).getImage();
+        cr3 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Mario/firecrouchright.png")).getImage();
+        hr3 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Mario/firehangright.png")).getImage();
+        sl3 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Mario/firestillleft.png")).getImage();
+        w1l3 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Mario/firewalkleft.png")).getImage();
+        w2l3 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Mario/firewalk2left.png")).getImage();
+        jl3 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Mario/firejumpleft.png")).getImage();
+        tr3 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Mario/firethrowright.png")).getImage();
+        tl3 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Mario/firethrowleft.png")).getImage();
+        cl3 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Mario/firecrouchleft.png")).getImage();
+        hl3 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Mario/firehangleft.png")).getImage();
     }
     
     public void paintComponent(Graphics g) // Places object on canvas based on status

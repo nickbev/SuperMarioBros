@@ -29,7 +29,7 @@ public class MarioFrame extends JFrame // Window which displays game
         //canvas.setPreferredSize(new Dimension(CANVAS_WIDTH, CANVAS_HEIGHT));
         //getContentPane().add(canvas);
         setTitle("Super Mario Bros.");
-        setIconImage(new ImageIcon(".." + File.separator + "Pics" + File.separator + "marioicon.png").getImage());
+        setIconImage(new ImageIcon(getClass().getClassLoader().getResource("Pics/marioicon.png")).getImage());
     }
     
     public void toTitle() // Returns the game to the menu after winning, losing or quitting

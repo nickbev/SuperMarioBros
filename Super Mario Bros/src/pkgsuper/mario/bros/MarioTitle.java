@@ -29,13 +29,13 @@ public class MarioTitle extends JPanel implements ActionListener, KeyListener
     
     public MarioTitle (MarioFrame x) // Starts the timer and listeners
     {
-        back = new ImageIcon (".." + File.separator + "Pics" + File.separator + "Level" + File.separator + "main.gif").getImage();
-        mario =  new ImageIcon(".." + File.separator + "Pics" + File.separator + "Mario" + File.separator + "smallstillright.gif").getImage();
-        c1 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Coin" + File.separator + "coin1.png").getImage();
+        back = new ImageIcon(getClass().getClassLoader().getResource("Pics/Level/main.gif")).getImage();
+        mario =  new ImageIcon(getClass().getClassLoader().getResource("Pics/Mario/smallstillright.png")).getImage();
+        c1 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Coin/coin1.png")).getImage();
         
         try
         {
-            File score = new File(".." + File.separator + "Classes" + File.separator + "highscore.txt");
+            File score = new File(getClass().getClassLoader().getResource("highscore.txt").toString());
             Scanner scan = new Scanner(score);
             highScore = scan.nextInt();
         }
@@ -63,7 +63,7 @@ public class MarioTitle extends JPanel implements ActionListener, KeyListener
             highScore = x;
             try
             {
-                FileWriter wr = new FileWriter(".." + File.separator + "Classes" + File.separator + "highscore.txt", false);
+                FileWriter wr = new FileWriter(getClass().getClassLoader().getResource("highscore.txt").toString(), false);
                 String str = "" + highScore;
                 BufferedWriter out = new BufferedWriter(wr);
                 out.write(str);

@@ -46,24 +46,24 @@ public class Turtle extends JComponent
     
     public Turtle (int a, int b, String color) // Constructor
     {
-        gr1 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Turtle" + File.separator + "greenright1.png").getImage();
-        gr2 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Turtle" + File.separator + "greenright2.png").getImage();
-        gl1 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Turtle" + File.separator + "greenleft1.png").getImage();
-        gl2 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Turtle" + File.separator + "greenleft2.png").getImage();
-        gs1 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Turtle" + File.separator + "greenshell1.png").getImage();
-        gs2 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Turtle" + File.separator + "greenshell2.png").getImage();
-        rr1 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Turtle" + File.separator + "redright1.png").getImage();
-        rr2 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Turtle" + File.separator + "redright2.png").getImage();
-        rl1 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Turtle" + File.separator + "redleft1.png").getImage();
-        rl2 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Turtle" + File.separator + "redleft2.png").getImage();
-        rs1 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Turtle" + File.separator + "redshell1.png").getImage();
-        rs2 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Turtle" + File.separator + "redshell2.png").getImage();
-        dr1 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Turtle" + File.separator + "darkright1.png").getImage();
-        dr2 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Turtle" + File.separator + "darkright2.png").getImage();
-        dl1 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Turtle" + File.separator + "darkleft1.png").getImage();
-        dl2 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Turtle" + File.separator + "darkleft2.png").getImage();
-        ds1 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Turtle" + File.separator + "darkshell1.png").getImage();
-        ds2 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Turtle" + File.separator + "darkshell2.png").getImage();
+        gr1 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Turtle/greenright1.png")).getImage();
+        gr2 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Turtle/greenright2.png")).getImage();
+        gl1 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Turtle/greenleft1.png")).getImage();
+        gl2 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Turtle/greenleft2.png")).getImage();
+        gs1 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Turtle/greenshell1.png")).getImage();
+        gs2 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Turtle/greenshell2.png")).getImage();
+        rr1 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Turtle/redright1.png")).getImage();
+        rr2 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Turtle/redright2.png")).getImage();
+        rl1 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Turtle/redleft1.png")).getImage();
+        rl2 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Turtle/redleft2.png")).getImage();
+        rs1 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Turtle/redshell1.png")).getImage();
+        rs2 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Turtle/redshell2.png")).getImage();
+        dr1 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Turtle/darkright1.png")).getImage();
+        dr2 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Turtle/darkright2.png")).getImage();
+        dl1 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Turtle/darkleft1.png")).getImage();
+        dl2 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Turtle/darkleft2.png")).getImage();
+        ds1 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Turtle/darkshell1.png")).getImage();
+        ds2 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Turtle/darkshell2.png")).getImage();
         
         x = a;
         y = b;

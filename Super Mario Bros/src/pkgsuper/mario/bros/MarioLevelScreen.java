@@ -30,10 +30,10 @@ public class MarioLevelScreen extends JPanel implements ActionListener
     
     public MarioLevelScreen(int lifes, int c, int sc, String lev, int sts, MarioFrame frame) // Starts the timer and listeners
     {
-        mario =  new ImageIcon(".." + File.separator + "Pics" + File.separator + "Mario" + File.separator + "smallstillright.png").getImage();
-        bigmario =  new ImageIcon(".." + File.separator + "Pics" + File.separator + "Mario" + File.separator + "bigstillright.png").getImage();
-        firemario =  new ImageIcon(".." + File.separator + "Pics" + File.separator + "Mario" + File.separator + "firestillright.png").getImage();
-        c1 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Coin" + File.separator + "coin1.png").getImage();
+        mario =  new ImageIcon(getClass().getClassLoader().getResource("Pics/Mario/smallstillright.png")).getImage();
+        bigmario =  new ImageIcon(getClass().getClassLoader().getResource("Pics/Mario/bigstillright.png")).getImage();
+        firemario =  new ImageIcon(getClass().getClassLoader().getResource("Pics/Mario/firestillright.png")).getImage();
+        c1 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Coin/coin1.png")).getImage();
         
         time.start();
         lives = lifes;

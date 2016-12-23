@@ -23,15 +23,15 @@ public class Block extends JComponent// Block containing a powerup, coin, or not
     
     public Block(int b, int h, int a, int level) // Constructor
     {
-        q1 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Block" + File.separator + "questionblock1.png").getImage();
-        q2 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Block" + File.separator + "questionblock2.png").getImage();
-        q3 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Block" + File.separator + "questionblock3.png").getImage();
-        q4 = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Block" + File.separator + "questionblock4.png").getImage();
+        q1 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Block/questionblock1.png")).getImage();
+        q2 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Block/questionblock2.png")).getImage();
+        q3 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Block/questionblock3.png")).getImage();
+        q4 = new ImageIcon(getClass().getClassLoader().getResource("Pics/Block/questionblock4.png")).getImage();
         if(level == 2)
-            brick = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Block" + File.separator + "brickdark.png").getImage();
+            brick = new ImageIcon(getClass().getClassLoader().getResource("Pics/Block/brickdark.png")).getImage();
         else
-            brick = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Block" + File.separator + "brick.png").getImage();
-        hit = new ImageIcon(".." + File.separator + "Pics" + File.separator + "Block" + File.separator + "hitquestionblock.jpg").getImage();
+            brick = new ImageIcon(getClass().getClassLoader().getResource("Pics/Block/brick.png")).getImage();
+        hit = new ImageIcon(getClass().getClassLoader().getResource("Pics/Block/hitquestionblock.png")).getImage();
         
         x = b;
         y = h;
