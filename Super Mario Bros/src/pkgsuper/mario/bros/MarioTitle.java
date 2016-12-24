@@ -5,6 +5,8 @@ import java.io.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.util.Scanner;
+import java.util.Properties;
+import java.util.Arrays;
 
 import javax.swing.*;
 
@@ -23,8 +25,7 @@ public class MarioTitle extends JPanel implements ActionListener, KeyListener
     private Image c1;
     
     
-    FileInputStream in = null;
-    FileOutputStream out = null;
+    File highscoresource = new File("highscore.txt");
     
     
     public MarioTitle (MarioFrame x) // Starts the timer and listeners
@@ -35,7 +36,7 @@ public class MarioTitle extends JPanel implements ActionListener, KeyListener
         
         try
         {
-            File score = new File(getClass().getClassLoader().getResource("highscore.txt").toString());
+            InputStream score = new FileInputStream(highscoresource);
             Scanner scan = new Scanner(score);
             highScore = scan.nextInt();
         }
@@ -63,15 +64,24 @@ public class MarioTitle extends JPanel implements ActionListener, KeyListener
             highScore = x;
             try
             {
-                FileWriter wr = new FileWriter(getClass().getClassLoader().getResource("highscore.txt").toString(), false);
+                OutputStream wr = new FileOutputStream(highscoresource);
                 String str = "" + highScore;
-                BufferedWriter out = new BufferedWriter(wr);
-                out.write(str);
-                out.close();
+                wr.write(str.getBytes());
             }
             catch (Exception e)
             {
-                System.out.print("No High Score File Found");
+                System.err.println("1");
+                System.err.println(e);
+                System.err.println("\n2");
+                System.err.println(e.getMessage());
+                System.err.println("\n3");
+                System.err.println(e.getLocalizedMessage());
+                System.err.println("\n4");
+                System.err.println(e.getCause());
+                System.err.println("\n5");
+                System.err.println(Arrays.toString(e.getStackTrace()));
+                System.err.println("\n6");
+                e.printStackTrace();
             }
         }
     }

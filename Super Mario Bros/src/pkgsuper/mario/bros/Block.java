@@ -31,7 +31,7 @@ public class Block extends JComponent// Block containing a powerup, coin, or not
             brick = new ImageIcon(getClass().getClassLoader().getResource("Pics/Block/brickdark.png")).getImage();
         else
             brick = new ImageIcon(getClass().getClassLoader().getResource("Pics/Block/brick.png")).getImage();
-        hit = new ImageIcon(getClass().getClassLoader().getResource("Pics/Block/hitquestionblock.png")).getImage();
+        hit = new ImageIcon(getClass().getClassLoader().getResource("Pics/Block/hitquestionblock.jpg")).getImage();
         
         x = b;
         y = h;
